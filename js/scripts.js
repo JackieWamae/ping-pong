@@ -1,43 +1,32 @@
 // business logic
 var numbers = []
 
-function game(userInput) {
-  for (var i = 1; i <= userInput; i++)
-    if (x % 15 === 0) {
+function game(numberInput, numbers) {
+  for (var i = 1; i <= numberInput; i++)
+    if (i % 15 == 0) {
       numbers.push("game");
 
     }
-  else if (x % 3 === 0) {
+  else if (i % 3 == 0) {
     numbers.push("ping");
-  } else if (x % 5 === 0) {
+  } else if (i % 5 == 0) {
     numbers.push("pong");
   } else {
-    numbers.push(x);
+    numbers.push(i);
   }
 }
 
 //user logic
 $(document).ready(function() {
-  $(#PingPong).click(function(){
+  $("#user").click(function() {
     event.preventDefault();
-    var userInput = parseInt($("input#user").val());
+    var numberInput = parseInt($("input#number").val());
 
-    game(userInput);
+    game(numberInput, numbers);
 
-    numbers.forEach(function(userInput){
-      $("#resultslist").append("<li>" + userInput + "</li>");
-    })
+    numbers.forEach(function(number) {
+      $("#resultslist").append("<li>" + number + "</li>");
+    });
 
-  }
-)
-
-
-
-
-
-
-
-
-
-
-}
+  });
+})
