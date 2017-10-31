@@ -3,10 +3,14 @@ body, html {
 }
 
 body {
-  background-image: url("../assets/blackboard5.jpg");
+  background-image: url("../assets/backgroundsun.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Overlock', cursive;
   color: white;
+}
+
+.header {
+  font-family: 'Megrim', cursive;
+  font-size: 50px;
 }
