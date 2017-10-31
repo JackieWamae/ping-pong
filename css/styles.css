@@ -3,9 +3,10 @@ body, html {
 }
 
 body {
-  background-image: url("../assets/blackboard.jpg");
+  background-image: url("../assets/blackboard5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: 'Kalam', cursive;
+  font-family: 'Overlock', cursive;
   color: white;
+}
